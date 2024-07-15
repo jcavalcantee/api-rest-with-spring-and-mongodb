@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.project.Banco.dto.TransactionDTO;
+import tech.project.Banco.dtos.TransactionDTO;
 import tech.project.Banco.model.Transaction;
 import tech.project.Banco.service.TransactionService;
 

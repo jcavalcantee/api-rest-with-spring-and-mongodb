@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
-import tech.project.Banco.dto.TransactionDTO;
+import tech.project.Banco.dtos.TransactionDTO;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

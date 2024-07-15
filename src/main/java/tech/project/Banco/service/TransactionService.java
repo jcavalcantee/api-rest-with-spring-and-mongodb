@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import tech.project.Banco.dto.TransactionDTO;
+import tech.project.Banco.dtos.TransactionDTO;
 import tech.project.Banco.model.Account;
 import tech.project.Banco.model.Transaction;
 import tech.project.Banco.repository.AccountRepository;

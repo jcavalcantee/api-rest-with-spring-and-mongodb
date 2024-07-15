@@ -1,20 +1,17 @@
-package tech.project.Banco.dto;
+package tech.project.Banco.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter
-public class TransactionDTO {
+public class ErrorResponse {
 
-    private BigDecimal amount;
-    private String sender;
-    private String receiver;
+    private String message;
     private LocalDateTime timeStamp;
 }
