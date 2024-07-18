@@ -6,19 +6,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter @Setter
-public class TransactionDTO {
+public class UserDTO {
 
     @NotBlank
-    private BigDecimal amount;
+    private String username;
     @NotBlank
-    private String sender;
-    @NotBlank
-    private String receiver;
-    private LocalDateTime timeStamp;
+    private String password;
 }

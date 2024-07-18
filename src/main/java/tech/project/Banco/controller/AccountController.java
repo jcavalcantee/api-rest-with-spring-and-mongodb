@@ -1,5 +1,6 @@
 package tech.project.Banco.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.method.P;
@@ -19,7 +20,7 @@ public class AccountController {
     private AccountService accountService;
 
     @PostMapping()
-    public ResponseEntity<Account> createAccount(@RequestBody AccountDTO dto) {
+    public ResponseEntity<Account> createAccount(@RequestBody @Valid AccountDTO dto) {
         return accountService.create(dto);
     }
 
@@ -34,7 +35,7 @@ public class AccountController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> updateAccount(@PathVariable String id, @RequestBody UpdateAccountDTO dto) throws Exception {
+    public ResponseEntity<?> updateAccount(@PathVariable String id, @RequestBody @Valid UpdateAccountDTO dto) throws Exception {
         return accountService.updateAccount(id, dto);
     }
 

@@ -7,12 +7,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import tech.project.Banco.dtos.AccountDTO;
 import tech.project.Banco.dtos.UpdateAccountDTO;
-import tech.project.Banco.exception.ErrorResponse;
-import tech.project.Banco.exception.GlobalExceptionHandler;
 import tech.project.Banco.model.Account;
 import tech.project.Banco.repository.AccountRepository;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
